@@ -45,7 +45,7 @@
       window.LOGLEVEL = 'info';
       window.FRAMEWORK_OPTIONS = {};
       window.CHANNEL_OPTIONS = {};
-      window.FEATURES = {"argTypeTargetsV7":true,"legacyDecoratorFileOrder":false,"disallowImplicitActionsInRenderV8":true,"viewport":true,"highlight":true,"controls":true,"interactions":false,"actions":false,"backgrounds":true,"outline":true,"measure":true,"sidebarOnboardingChecklist":true,"componentsManifest":true};
+      window.FEATURES = {"argTypeTargetsV7":true,"legacyDecoratorFileOrder":false,"disallowImplicitActionsInRenderV8":true,"viewport":true,"highlight":true,"controls":true,"interactions":false,"actions":false,"backgrounds":true,"outline":true,"measure":true,"sidebarOnboardingChecklist":true,"componentsManifest":false};
       window.STORIES = [{"titlePrefix":"","directory":"./src","files":"**/*.stories.@(ts|tsx)","importPathMatcher":"^\\.[\\\\/](?:src(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.stories\\.(ts|tsx))$"},{"titlePrefix":"","directory":"./src","files":"**/*.mdx","importPathMatcher":"^\\.[\\\\/](?:src(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.mdx)$"}];
       window.DOCS_OPTIONS = {"defaultName":"Docs"};
       window.TAGS_OPTIONS = {};
@@ -547,13 +547,22 @@
   }
 </script>
 
-    <script type="module" crossorigin src="./assets/iframe-Cs11f8PI.js"></script>
+    <script type="module" crossorigin src="./assets/iframe-DbG6iApd.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/chunk-BneVvdWh.js">
     <link rel="modulepreload" crossorigin href="./assets/preload-helper-CV6hqhE5.js">
-    <link rel="modulepreload" crossorigin href="./assets/theming-4bZ9-qzC.js">
-    <link rel="modulepreload" crossorigin href="./assets/components-BMv56Vyw.js">
-    <link rel="modulepreload" crossorigin href="./assets/iframe-Cs11f8PI.js">
-    <link rel="modulepreload" crossorigin href="./assets/react-DqMRxE9T.js">
+    <link rel="modulepreload" crossorigin href="./assets/chunk-CYSK6WYR-C7GGD6Sc.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-D1sJ83FZ.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-DUEmErTH.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-dom-CX6U_vZl.js">
+    <link rel="modulepreload" crossorigin href="./assets/jsx-runtime-Cw9gq7QB.js">
+    <link rel="modulepreload" crossorigin href="./assets/chunk-242VQQM5-DhDXsZYD.js">
+    <link rel="modulepreload" crossorigin href="./assets/chunk-3LY4VQVK-DCNlYdu3.js">
+    <link rel="modulepreload" crossorigin href="./assets/csf-Co-ueV5P.js">
+    <link rel="modulepreload" crossorigin href="./assets/theming-b7XIry0e.js">
+    <link rel="modulepreload" crossorigin href="./assets/chunk-RD3KTAHR-BsxoL_G8.js">
+    <link rel="modulepreload" crossorigin href="./assets/components-DyFJpMfg.js">
+    <link rel="modulepreload" crossorigin href="./assets/blocks-B7uraDXf.js">
+    <link rel="modulepreload" crossorigin href="./assets/dist-Kc0obCSN.js">
     <link rel="stylesheet" crossorigin href="./assets/iframe-BJpTEOw-.css">
   </head>
 
@@ -686,10 +695,10 @@
         if (hostname !== 'localhost' && globalThis.CONFIG_TYPE === 'DEVELOPMENT') {
           const message = `Failed to load the Storybook preview file 'vite-app.js':
 
-It looks like you're visiting the Storybook development server on another hostname than localhost: '${hostname}', but you haven't configured the necessary security features to support this.
-Please re-run your Storybook development server with the '--host ${hostname}' flag, or manually configure your Vite allowedHosts configuration with viteFinal.
+      It looks like you're visiting the Storybook development server on another hostname than localhost: '${hostname}', but you haven't configured the necessary security features to support this.
+      Please re-run your Storybook development server with the '--host ${hostname}' flag, or manually configure your Vite allowedHosts configuration with viteFinal.
 
-See:`;
+      See:`;
           const docs = [
             'https://storybook.js.org/docs/api/cli-options#dev',
             'https://storybook.js.org/docs/api/main-config/main-config-vite-final',
@@ -701,7 +710,7 @@ See:`;
             `<p style="color: red; max-width: 70ch">${message.replaceAll(
               '\n',
               '<br/>'
-            )}<ul>${docs.map((doc) => `<li><a href='${doc}' target='_blank'>${doc}</a></li>`).join('')}<ul></p>`;
+            )}<ul>${docs.map((doc) => `<li><a href='${doc}' target='_blank'>${doc}</a></li>`).join('')}</ul></p>`;
           return;
         }
       }
