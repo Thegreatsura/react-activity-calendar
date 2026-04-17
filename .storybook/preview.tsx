@@ -53,7 +53,7 @@ export const preview: Preview = {
       codePanel: true,
       container: Container,
       controls: {
-        sort: 'alpha',
+        sort: 'requiredFirst',
       },
       source: {
         language: 'tsx',
