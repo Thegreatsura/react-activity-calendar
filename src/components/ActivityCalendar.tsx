@@ -146,7 +146,7 @@ export type Props = {
    * the colors for all activity levels per scheme explicitly or specify two
    * colors (the zero and maximum intensity) to calculate a scale automatically.
    * The number of activity levels is controlled by the `minLevel` and
-   * `maxLevel` properties.
+   * `maxLevel` props.
    * If you have negative activity levels, you can also pass three colors,
    * representing the negative, zero, and positive levels, to calculate a
    * corresponding scale. For explicit themes the color count must match the

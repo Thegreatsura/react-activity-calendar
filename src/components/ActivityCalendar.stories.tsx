@@ -10,6 +10,7 @@ import LinkTo from '@storybook/addon-links/react'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useDarkMode } from '@vueless/storybook-dark-mode'
 import Container from '../../.storybook/components/Container'
+import exampleActivityLevels from '../../examples/activity-levels?raw'
 import exampleCustomization from '../../examples/customization?raw'
 import exampleEventHandlers from '../../examples/event-handlers?raw'
 import exampleLabelsShape from '../../examples/labels-shape?raw'
@@ -188,40 +189,40 @@ export const ActivityLevels: Story = {
           style={{ margin: '1.5rem 0' }}
         />
         <p>
-          Use the{' '}
-          <code>
-            <b>minLevel</b>
-          </code>{' '}
-          and{' '}
-          <code>
-            <b>maxLevel</b>
-          </code>{' '}
-          properties to control the range of activity levels. By default, the range is{' '}
-          <code>[0, 4]</code>, resulting in 5 activity levels (0 through 4, inclusive). All activity
-          data must be within these bounds.
+          Use the <code>minLevel</code> and <code>maxLevel</code> props to control the range of
+          activity levels. By default, the range is <code>[0, 4]</code>, resulting in 5 activity
+          levels (0 through 4, inclusive). All activity data must be within these bounds.
         </p>
         <p>
-          You can also specify a negative interval like <code>[-4, 4]</code>. To calculate a scale
-          automatically pass exactly three colors representing the negative, zero and positive color
-          (see{' '}
+          Activity levels support any range, including negative ones like <code>[-6, 3]</code>. To
+          calculate a scale automatically pass exactly three colors representing the negative, zero
+          and positive color (see{' '}
           <LinkTo kind="react-activity-calendar" name="color-themes">
             color themes
           </LinkTo>
-          ).
+          ):
         </p>
         <ActivityCalendar
           {...args}
-          data={generateTestData({ minLevel: -4, maxLevel: 4 })}
-          minLevel={-4}
-          maxLevel={4}
+          data={generateTestData({ minLevel: -6, maxLevel: 3 })}
+          minLevel={-6}
+          maxLevel={3}
           labels={{
-            legend: { less: '-4', more: '4' },
+            legend: { less: '-6', more: '3' },
           }}
           theme={{
-            light: ['red', 'hsl(0, 0%, 92%)', 'green'],
+            light: ['red', 'hsl(0, 0%, 92%)', '#4ac26b'],
+            dark: ['red', 'hsl(0, 0%, 22%)', '#4ac26b'],
+          }}
+          tooltips={{
+            activity: {
+              text: ({ count, level }) => `Level ${level} (${count} activities)`,
+              withArrow: true,
+            },
           }}
           style={{ margin: '1.5rem 0' }}
         />
+        <Source code={exampleActivityLevels} isDarkMode={useDarkMode()} />
       </Container>
     )
   },
@@ -318,18 +319,14 @@ export const ColorThemes: Story = {
         <h1>Color themes</h1>
         <ActivityCalendar {...args} data={data} style={{ margin: '2rem 0' }} />
         <p>
-          Use the{' '}
-          <code>
-            <b>theme</b>
-          </code>{' '}
-          prop to configure the calendar colors for the light and dark{' '}
+          Use the <code>theme</code> prop to configure the calendar colors for the light and dark{' '}
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme">color scheme</a>.
           Provide the colors for all activity levels per scheme{' '}
           <LinkTo kind="react-activity-calendar" name="explicit-themes">
             explicitly
           </LinkTo>{' '}
           or specify two colors (the zero and maximum intensity) to calculate a scale automatically.
-          The number of activity levels is controlled by the minLevel and maxLevel properties, see{' '}
+          The number of activity levels is controlled by the minLevel and maxLevel props, see{' '}
           <LinkTo kind="react-activity-calendar" name="activity-levels">
             activity levels
           </LinkTo>
@@ -444,12 +441,9 @@ export const EventHandlers: Story = {
       <Container>
         <h1>Event Handlers</h1>
         <p>
-          Use the{' '}
-          <code>
-            <b>renderBlock</b>
-          </code>{' '}
-          prop to attach event handlers to the SVG <code>rect</code> elements that represent
-          calendar days. Click on any block below to see it in action.
+          Use the <code>renderBlock</code> prop to attach event handlers to the SVG{' '}
+          <code>rect</code> elements that represent calendar days. Click on any block below to see
+          it in action.
         </p>
         <ActivityCalendar {...args} data={data} style={{ margin: '2rem 0' }} />
         <p>
@@ -483,13 +477,9 @@ export const Tooltips: Story = {
       <Container>
         <h1>Tooltips</h1>
         <p>
-          Use the{' '}
-          <code>
-            <b>tooltips</b>
-          </code>{' '}
-          prop to show tooltips when hovering the calendar days or the color legend. Each tooltip's
-          content is generated by a callback function, which receives either the activity data or
-          level value of the hovered element.
+          Use the <code>tooltips</code> prop to show tooltips when hovering the calendar days or the
+          color legend. Each tooltip's content is generated by a callback function, which receives
+          either the activity data or level value of the hovered element.
         </p>
         <ActivityCalendar {...args} data={data} style={{ margin: '2rem 0' }} />
         <p>

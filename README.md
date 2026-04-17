@@ -24,15 +24,16 @@ npm install react-activity-calendar
 
 ## Features
 
-- any number of activity levels 📈
-- color themes 🌈
-- dark & light mode ✨
-- tooltips 🪧
-- event handlers ⁉️
-- localization 🌍
+- any number of activity levels, including negative ones
+- color themes
+- dark and light mode
+- tooltips
+- event handlers
+- localization
 
 The component expects activity data in the following shape, where each activity level must be in the
-given level bounds. By default, the level bounds are `[0, 4]` (see
+bounds controlled by the `minLevel` and `maxLevel` props. By default, the level bounds are `[0, 4]`
+but any range is possible (see
 [documentation](https://grubersjoe.github.io/react-activity-calendar/?path=/story/react-activity-calendar--activity-levels)).
 It is up to you how to generate and classify your data.
 
