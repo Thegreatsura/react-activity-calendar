@@ -1,6 +1,7 @@
 # React Activity Calendar
 
-[![CI](https://github.com/grubersjoe/react-activity-calendar/actions/workflows/test.yml/badge.svg)](https://github.com/grubersjoe/react-activity-calendar/actions/workflows/test.yml)
+[![Tests](https://github.com/grubersjoe/react-activity-calendar/actions/workflows/test.yml/badge.svg)](https://github.com/grubersjoe/react-activity-calendar/actions/workflows/test.yml)
+[![Playwright tests](https://github.com/grubersjoe/react-activity-calendar/actions/workflows/playwright.yml/badge.svg)](https://github.com/grubersjoe/react-activity-calendar/actions/workflows/playwright.yml)
 [![npm version](https://badge.fury.io/js/react-activity-calendar.svg)](https://www.npmjs.com/package/react-activity-calendar)
 
 A React component to display activity data in a calendar (heatmap).<br>
