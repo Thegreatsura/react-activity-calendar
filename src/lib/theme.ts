@@ -40,7 +40,7 @@ function createDefaultTheme(levels: Levels): Theme {
 
 function validateThemeInput(input: ThemeInput, numberOfLevels: number) {
   const levelsHint =
-    'The number of colors must match the number of activity levels controlled by the `minLevel` and `maxLevel` properties.'
+    'The number of colors must match the number of activity levels controlled by the `minLevel` and `maxLevel` props.'
 
   if (typeof input !== 'object' || (input.light === undefined && input.dark === undefined)) {
     throw new Error(

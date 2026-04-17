@@ -122,7 +122,7 @@ describe('createTheme', () => {
     expect(createTheme(input)).toStrictEqual(defaultTheme)
   })
 
-  it('calculates color scale for specific color', () => {
+  it('calculates color scales for different color notations', () => {
     const input: ThemeInput = {
       light: ['hsl(0, 0%, 92%)', 'rebeccapurple'],
       dark: ['hsl(0, 0%, 22%)', 'hsl(225,92%,77%)'],
@@ -191,14 +191,30 @@ describe('createTheme', () => {
       },
     ],
     [
-      { minLevel: -1, maxLevel: 1 },
+      { minLevel: -2, maxLevel: 4 },
       {
-        light: ['hsl(0, 0%, 26%)', 'hsl(0, 0%, 92%)', 'hsl(0, 0%, 26%)'],
-        dark: ['hsl(0, 0%, 92%)', 'hsl(0, 0%, 22%)', 'hsl(0, 0%, 92%)'],
+        dark: [
+          'hsl(0, 0%, 92%)',
+          'color-mix(in oklab, hsl(0, 0%, 22%) 50%, hsl(0, 0%, 92%))',
+          'hsl(0, 0%, 22%)',
+          'color-mix(in oklab, hsl(0, 0%, 92%) 25%, hsl(0, 0%, 22%))',
+          'color-mix(in oklab, hsl(0, 0%, 92%) 50%, hsl(0, 0%, 22%))',
+          'color-mix(in oklab, hsl(0, 0%, 92%) 75%, hsl(0, 0%, 22%))',
+          'hsl(0, 0%, 92%)',
+        ],
+        light: [
+          'hsl(0, 0%, 26%)',
+          'color-mix(in oklab, hsl(0, 0%, 92%) 50%, hsl(0, 0%, 26%))',
+          'hsl(0, 0%, 92%)',
+          'color-mix(in oklab, hsl(0, 0%, 26%) 25%, hsl(0, 0%, 92%))',
+          'color-mix(in oklab, hsl(0, 0%, 26%) 50%, hsl(0, 0%, 92%))',
+          'color-mix(in oklab, hsl(0, 0%, 26%) 75%, hsl(0, 0%, 92%))',
+          'hsl(0, 0%, 26%)',
+        ],
       },
     ],
   ] satisfies Array<[Levels, Theme]>)(
-    'calculates correct color scales for levels %s',
+    'calculates color scales for levels %s',
     (levels, expected) => {
       const input: ThemeInput = {
         light: ['hsl(0, 0%, 92%)', 'hsl(0, 0%, 26%)'],
