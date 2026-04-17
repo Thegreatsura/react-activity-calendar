@@ -10,6 +10,8 @@ services:
         RUN pnpm config set store-dir /pnpm/store
     platform: linux/arm64
     working_dir: /app
+    environment:
+      CI: 'true'
     volumes:
       - .:/app
       - playwright-node-modules:/app/node_modules
