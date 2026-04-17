@@ -1,5 +1,24 @@
 const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./Tooltip-BEHd1gzE.js","./Tooltip-CXMhhhMY.js","./chunk-BneVvdWh.js","./react-dom-CX6U_vZl.js","./react-D1sJ83FZ.js","./jsx-runtime-Cw9gq7QB.js"])))=>i.map(i=>d[i]);
-import{a as e,n as t}from"./chunk-BneVvdWh.js";import{n,t as r}from"./preload-helper-CV6hqhE5.js";import{t as i}from"./react-D1sJ83FZ.js";import{i as a,r as o}from"./dist-Kc0obCSN.js";import{t as s}from"./jsx-runtime-Cw9gq7QB.js";import{i as c,n as l,r as u,t as d}from"./Source-CnH62vpq.js";import{_ as ee,a as f,c as te,d as ne,f as re,g as ie,h as ae,i as p,l as oe,m as se,n as ce,o as le,p as m,r as ue,s as h,u as de}from"./Tooltip-CXMhhhMY.js";var g,_,fe=t((()=>{g=s(),_=({children:e})=>(0,g.jsx)(`div`,{style:{margin:`1rem 0 2rem`},children:e}),_.__docgenInfo={description:``,methods:[],displayName:`Container`,props:{children:{required:!0,tsType:{name:`ReactNode`},description:``}}}})),pe,me=t((()=>{pe=`<ActivityCalendar
+import{a as e,n as t}from"./chunk-BneVvdWh.js";import{n,t as r}from"./preload-helper-CV6hqhE5.js";import{t as i}from"./react-D1sJ83FZ.js";import{i as a,r as o}from"./dist-Kc0obCSN.js";import{t as s}from"./jsx-runtime-Cw9gq7QB.js";import{i as c,n as l,r as u,t as d}from"./Source-CnH62vpq.js";import{_ as ee,a as f,c as te,d as ne,f as re,g as ie,h as ae,i as p,l as oe,m,n as se,o as ce,p as h,r as le,s as g,u as ue}from"./Tooltip-CXMhhhMY.js";var _,v,de=t((()=>{_=s(),v=({children:e})=>(0,_.jsx)(`div`,{style:{margin:`1rem 0 2rem`},children:e}),v.__docgenInfo={description:``,methods:[],displayName:`Container`,props:{children:{required:!0,tsType:{name:`ReactNode`},description:``}}}})),fe,pe=t((()=>{fe=`<ActivityCalendar
+  data={data}
+  minLevel={-6}
+  maxLevel={3}
+  labels={{
+    legend: { less: '-6', more: '3' },
+  }}
+  theme={{
+    // Red for negative levels, gray for zero, green for positive ones.
+    light: ['red', 'hsl(0, 0%, 92%\`)', 'green'],
+    dark: ['red', 'hsl(0, 0%, 92%\`)', 'green'],
+  }}
+  tooltips={{
+    activity: {
+      text: ({ count, level }) => \`Level \${level} (\${count} activities)\`,
+      withArrow: true,
+    },
+  }}
+  style={{ margin: '1.5rem 0' }}
+/>`})),y,me=t((()=>{y=`<ActivityCalendar
   data={data}
   blockSize={14}
   blockRadius={7}
@@ -10,7 +29,7 @@ import{a as e,n as t}from"./chunk-BneVvdWh.js";import{n,t as r}from"./preload-he
     dark: ['#383838', '#4D455D', '#7DB9B6', '#F5E9CF', '#E96479'],
   }}
 />
-`})),v,he=t((()=>{v=`import { cloneElement } from 'react'
+`})),b,x=t((()=>{b=`import { cloneElement } from 'react'
 
 <ActivityCalendar
   data={data}
@@ -24,7 +43,7 @@ import{a as e,n as t}from"./chunk-BneVvdWh.js";import{n,t as r}from"./preload-he
       },
     })
 />
-`})),ge,y=t((()=>{ge=`import {
+`})),S,he=t((()=>{S=`import {
   ActivityCalendar,
   Props as CalendarProps,
 } from 'react-activity-calendar'
@@ -62,7 +81,7 @@ const labels = {
   },
 } satisfies CalendarProps['labels']
 
-<ActivityCalendar data={data} labels={labels} showWeekdayLabels />`})),b,_e=t((()=>{b=`<ActivityCalendar
+<ActivityCalendar data={data} labels={labels} showWeekdayLabels />`})),C,ge=t((()=>{C=`<ActivityCalendar
   data={data}
   labels={{
     months: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'],
@@ -74,7 +93,7 @@ const labels = {
     },
   }}
 />
-`})),x,ve=t((()=>{x=`import { useRef } from 'react'
+`})),w,T=t((()=>{w=`import { useRef } from 'react'
 
 const calendarRef = useRef<HTMLElement>(null)
 
@@ -83,14 +102,14 @@ if (calendar.current) {
 }
 
 <ActivityCalendar data={data} ref={calendarRef} />
-`})),S,C=t((()=>{S=`<ActivityCalendar
+`})),E,D=t((()=>{E=`<ActivityCalendar
   data={data}
   theme={{
     light: ['#f0f0f0', '#c4edde', '#7ac7c4', '#f73859', '#384259'],
     dark: ['#383838', '#4D455D', '#7DB9B6', '#F5E9CF', '#E96479'],
   }}
 />
-`})),w,T=t((()=>{w=`// For five activity levels
+`})),O,_e=t((()=>{O=`// For five activity levels
 const explicitTheme: ThemeInput = {
   light: ['#f0f0f0', '#c4edde', '#7ac7c4', '#f73859', '#384259'],
   dark: ['#383838', '#4D455D', '#7DB9B6', '#F5E9CF', '#E96479'],
@@ -118,7 +137,7 @@ const threeColorTheme: ThemeInput = {
   maxLevel={3}
   theme={threeColorTheme}
 />
-`})),E,ye=t((()=>{E=`<ActivityCalendar
+`})),ve,ye=t((()=>{ve=`<ActivityCalendar
   data={data}
   tooltips={{
     activity: {
@@ -170,8 +189,8 @@ const threeColorTheme: ThemeInput = {
     }
   }
 }
-`}));function we(){let[e,t]=(0,D.useState)(()=>typeof window>`u`?`light`:window.matchMedia(O).matches?`dark`:`light`),n=e=>{t(e.matches?`dark`:`light`)};return(0,D.useEffect)(()=>{let e=window.matchMedia(O);return t(e.matches?`dark`:`light`),e.addEventListener(`change`,n),()=>{e.removeEventListener(`change`,n)}},[]),e}var D,O,Te=t((()=>{D=e(i(),1),O=`(prefers-color-scheme: dark)`}));function Ee(e,t){let[n,r]=(0,k.useState)(!1);return(0,k.useEffect)(()=>{let n=`oklab(from ${e} l a b)`,i=t===`light`?`oklab(from ${e} calc(l * 0.96) a b)`:`oklab(from ${e} calc(l * 1.08) a b)`,a=document.createElement(`style`);a.innerHTML=`
-      @keyframes ${De} {
+`}));function we(){let[e,t]=(0,k.useState)(()=>typeof window>`u`?`light`:window.matchMedia(A).matches?`dark`:`light`),n=e=>{t(e.matches?`dark`:`light`)};return(0,k.useEffect)(()=>{let e=window.matchMedia(A);return t(e.matches?`dark`:`light`),e.addEventListener(`change`,n),()=>{e.removeEventListener(`change`,n)}},[]),e}var k,A,Te=t((()=>{k=e(i(),1),A=`(prefers-color-scheme: dark)`}));function Ee(e,t){let[n,r]=(0,De.useState)(!1);return(0,De.useEffect)(()=>{let n=`oklab(from ${e} l a b)`,i=t===`light`?`oklab(from ${e} calc(l * 0.96) a b)`:`oklab(from ${e} calc(l * 1.08) a b)`,a=document.createElement(`style`);a.innerHTML=`
+      @keyframes ${Oe} {
         0% {
           fill: ${n};
         }
@@ -182,7 +201,7 @@ const threeColorTheme: ThemeInput = {
           fill: ${n};
         }
       }
-    `;let o=()=>{r(!0)};return document.head.appendChild(a),a.addEventListener(`load`,o),()=>{document.head.removeChild(a),a.removeEventListener(`load`,o),r(!1)}},[e,t]),n}var k,De,Oe=t((()=>{k=e(i(),1),m(),De=`${re}--loading-animation`}));function ke(){let[e,t]=(0,Ae.useState)(()=>typeof window>`u`?!0:window.matchMedia(je).matches);return(0,Ae.useEffect)(()=>{let e=window.matchMedia(je);t(e.matches);let n=e=>{t(e.matches)};return e.addEventListener(`change`,n),()=>{e.removeEventListener(`change`,n)}},[]),e}var Ae,je,Me=t((()=>{Ae=e(i(),1),je=`(prefers-reduced-motion: reduce)`}));function Ne(e,t=ne){return e.reduce((e,n,r)=>{let i=n.find(e=>e!==void 0);if(!i)throw Error(`Unexpected error: Week ${r+1} is empty.`);let a=t[ee(ae(i.date))];if(!a){let e=new Date(i.date).toLocaleString(`en-US`,{month:`short`});throw Error(`Unexpected error: undefined month label for ${e}.`)}let o=e[e.length-1];return r===0||o?.label!==a?[...e,{weekIndex:r,label:a}]:e},[]).filter(({weekIndex:t},n,r)=>n===0?r[1]&&r[1].weekIndex-t>=3:n===r.length-1?e.slice(t).length>=3:!0)}function Pe(e,t,n){if(e.length!==7)throw Error(`Exactly 7 labels, one for each weekday must be passed.`);return e.reduce((e,r,i)=>t.byDayIndex(i)?Math.max(e,Math.ceil(Fe(r,n).width)):e,0)}function Fe(e,t){if(typeof document>`u`||typeof window>`u`)return{width:0,height:0};if(t<1)throw RangeError(`fontSize must be positive`);if(e.length===0)return{width:0,height:0};let n=`http://www.w3.org/2000/svg`,r=document.createElementNS(n,`svg`);r.style.position=`absolute`,r.style.visibility=`hidden`,r.style.fontFamily=window.getComputedStyle(document.body).fontFamily,r.style.fontSize=`${t}px`;let i=document.createElementNS(n,`text`);i.textContent=e,r.appendChild(i),document.body.appendChild(r);let a=i.getBBox();return document.body.removeChild(r),{width:a.width,height:a.height}}function Ie(e,t){if(!e)return{byDayIndex:()=>!1,shouldShow:!1};if(e===!0)return{byDayIndex:e=>(7+e-t)%7%2!=0,shouldShow:!0};let n=[];for(let t of e){let e=Le[t.toLowerCase()];n[e]=!0}return{byDayIndex:e=>n[e]??!1,shouldShow:e.length>0}}var Le,Re=t((()=>{se(),m(),Le={sun:0,mon:1,tue:2,wed:3,thu:4,fri:5,sat:6}}));function ze(e,t={minLevel:0,maxLevel:4}){let n=Be(t);return e?(Ve(e,t.maxLevel-t.minLevel+1),e.light=e.light??n.light,e.dark=e.dark??n.dark,{light:He(e.light)?A([e.light[1],e.light[0],e.light[1]],t):Ue(e.light)?A(e.light,t):e.light,dark:He(e.dark)?A([e.dark[1],e.dark[0],e.dark[1]],t):Ue(e.dark)?A(e.dark,t):e.dark}):n}function Be(e){return{light:A([`hsl(0, 0%, 26%)`,`hsl(0, 0%, 92%)`,`hsl(0, 0%, 26%)`],e),dark:A([`hsl(0, 0%, 92%)`,`hsl(0, 0%, 22%)`,`hsl(0, 0%, 92%)`],e)}}function Ve(e,t){let n="The number of colors must match the number of activity levels controlled by the `minLevel` and `maxLevel` properties.";if(typeof e!=`object`||e.light===void 0&&e.dark===void 0)throw Error(`The theme object must contain at least one of the fields "light" and "dark" with exactly 2 or ${t} colors respectively. ${n}`);if(e.light){let{length:r}=e.light;if(r!==2&&r!==3&&r!==t)throw Error(`theme.light must contain exactly 2 or 3 or ${t} colors, ${r} passed. ${n}`);for(let t of e.light)if(typeof window<`u`&&!CSS.supports(`color`,t))throw Error(`Invalid color "${t}" passed. All CSS color formats are accepted.`)}if(e.dark){let{length:r}=e.dark;if(r!==2&&r!==3&&r!==t)throw Error(`theme.dark must contain exactly 2 or 3 or ${t} colors, ${r} passed. ${n}`);for(let t of e.dark)if(typeof window<`u`&&!CSS.supports(`color`,t))throw Error(`Invalid color "${t}" passed. All CSS color formats are accepted.`)}}function A([e,t,n],{minLevel:r,maxLevel:i}){return te(r,i+1).map(a=>{if(a<0){if(a===r)return e;let n=(1-a/r)*100;return`color-mix(in oklab, ${t} ${parseFloat(n.toFixed(2))}%, ${e})`}if(a===0)return t;if(a===i)return n;let o=a/i*100;return`color-mix(in oklab, ${n} ${parseFloat(o.toFixed(2))}%, ${t})`})}function He(e){return e.length===2}function Ue(e){return e.length===3}var We=t((()=>{h()})),j,Ge=t((()=>{j={container:e=>({width:`max-content`,maxWidth:`100%`,display:`flex`,flexDirection:`column`,gap:`8px`,fontSize:`${e}px`}),scrollContainer:e=>({maxWidth:`100%`,overflowX:`auto`,overflowY:`hidden`,paddingTop:Math.ceil(.1*e)}),calendar:{display:`block`,overflow:`visible`},rect:e=>({stroke:e===`light`?`rgba(0, 0, 0, 0.08)`:`rgba(255, 255, 255, 0.04)`}),footer:{container:{display:`flex`,flexWrap:`wrap`,gap:`4px 16px`,whiteSpace:`nowrap`},legend:{marginLeft:`auto`,display:`flex`,alignItems:`center`,gap:`3px`}}}})),M,N,Ke,P,qe=t((()=>{M=e(i(),1),se(),m(),Te(),Oe(),Me(),h(),Re(),We(),Ge(),ce(),N=s(),n(),Ke=(0,M.lazy)(()=>r(()=>import(`./Tooltip-BEHd1gzE.js`).then(e=>({default:e.Tooltip})),__vite__mapDeps([0,1,2,3,4,5]),import.meta.url)),P=(0,M.forwardRef)(({data:e,blockMargin:t=4,blockRadius:n=2,blockSize:r=12,className:i,colorScheme:a,fontSize:o=14,labels:s,loading:c=!1,minLevel:l=0,maxLevel:u=4,renderBlock:d,renderColorLegend:ee,showColorLegend:ne=!0,showMonthLabels:p=!0,showTotalCount:se=!0,showWeekdayLabels:ce=!1,style:m={},theme:h,tooltips:g={},weekStart:_=0},fe)=>{let[pe,me]=(0,M.useState)(!1);if((0,M.useEffect)(()=>{me(!0)},[]),l>=u)throw RangeError(`Minimum activity level must be less than maximum level. Got ${l} and ${u}.`);let v={minLevel:l,maxLevel:u},he=ze(h,v),ge=we(),y=a??ge,b=he[y],_e=Ee(b[0],y),x=!ke();if(c){if(x&&!_e)return null;e=ue()}oe(e,v);let ve=e[0],S=ie(ae(ve.date)),C=le(e,_),w=Object.assign({},de,s),T=p?o+8:0,E=Ie(ce,_),ye=pe&&E.shouldShow?Pe(w.weekdays,E,o)+8:void 0;function be(){return{width:C.length*(r+t)-t,height:T+(r+t)*7-t}}function xe(){return C.map((e,i)=>e.map((e,a)=>{if(!e)return null;let o=c&&x?{animation:`${De} 1.75s ease-in-out infinite`,animationDelay:`${i*20+a*20}ms`}:void 0,s=(0,N.jsx)(`rect`,{x:0,y:T+(r+t)*a,width:r,height:r,rx:n,ry:n,fill:O(e.level),"data-date":e.date,"data-level":e.level,style:{...j.rect(y),...o}}),l=d?d(s,e):s;return(0,N.jsx)(M.Fragment,{children:g.activity?(0,N.jsx)(M.Suspense,{fallback:l,children:(0,N.jsx)(Ke,{text:g.activity.text(e),colorScheme:y,placement:g.activity.placement??`top`,hoverRestMs:g.activity.hoverRestMs,offset:g.activity.offset,transitionStyles:g.activity.transitionStyles,withArrow:g.activity.withArrow,children:l})}):l},e.date)})).map((e,n)=>(0,N.jsx)(`g`,{transform:`translate(${(r+t)*n}, 0)`,children:e},n))}function Se(){if(!se&&!ne)return null;let t=e.reduce((e,t)=>e+t.count,0);return(0,N.jsxs)(`footer`,{className:f(`footer`),style:{...j.footer.container,marginLeft:ye},children:[c&&(0,N.jsx)(`div`,{children:`\xA0`}),!c&&se&&(0,N.jsx)(`div`,{className:f(`count`),children:w.totalCount?w.totalCount.replace(`{{count}}`,String(t)).replace(`{{year}}`,String(S)):`${t} activities in ${S}`}),!c&&ne&&(0,N.jsxs)(`div`,{className:f(`legend-colors`),style:j.footer.legend,children:[w.legend.less&&(0,N.jsx)(`span`,{style:{marginRight:`0.4em`},children:w.legend.less}),te(l,u+1).map(e=>{let t=(0,N.jsx)(`svg`,{width:r,height:r,children:(0,N.jsx)(`rect`,{width:r,height:r,fill:O(e),rx:n,ry:n,style:j.rect(y)})},e),i=ee?ee(t,e):t;return(0,N.jsx)(M.Fragment,{children:g.colorLegend?(0,N.jsx)(M.Suspense,{fallback:i,children:(0,N.jsx)(Ke,{text:g.colorLegend.text(e),colorScheme:y,placement:g.colorLegend.placement??`bottom`,hoverRestMs:g.colorLegend.hoverRestMs,offset:g.colorLegend.offset,transitionStyles:g.colorLegend.transitionStyles,withArrow:g.colorLegend.withArrow,children:i})}):i},e)}),w.legend.more&&(0,N.jsx)(`span`,{style:{marginLeft:`0.4em`},children:w.legend.more})]})]})}function Ce(){return E.shouldShow?(0,N.jsx)(`g`,{className:f(`legend-weekday`),children:te(7).map(e=>{let n=(e+_)%7;return E.byDayIndex(n)?(0,N.jsx)(`text`,{x:-8,y:T+(r+t)*e+r/2,dominantBaseline:`central`,textAnchor:`end`,fill:`currentColor`,children:w.weekdays[n]},e):null})}):null}function D(){return p?(0,N.jsx)(`g`,{className:f(`legend-month`),children:Ne(C,w.months).map(({label:e,weekIndex:n})=>(0,N.jsx)(`text`,{x:(r+t)*n,y:0,dominantBaseline:`hanging`,fill:`currentColor`,children:e},n))}):null}function O(e){return b[e-l]}let{width:Te,height:k}=be();return(0,N.jsxs)(`article`,{ref:fe,className:`${re} ${i??``}`.trim(),style:{...m,...j.container(o)},children:[(0,N.jsx)(`div`,{className:f(`scroll-container`),style:j.scrollContainer(o),children:(0,N.jsxs)(`svg`,{width:Te,height:k,viewBox:`0 0 ${Te} ${k}`,className:f(`calendar`),style:{...j.calendar,marginLeft:ye},children:[!c&&Ce(),!c&&D(),xe()]})}),Se()]})}),P.displayName=`ActivityCalendar`,P.__docgenInfo={description:``,methods:[],displayName:`ActivityCalendar`,props:{data:{required:!0,tsType:{name:`Array`,elements:[{name:`signature`,type:`object`,raw:`{
+    `;let o=()=>{r(!0)};return document.head.appendChild(a),a.addEventListener(`load`,o),()=>{document.head.removeChild(a),a.removeEventListener(`load`,o),r(!1)}},[e,t]),n}var De,Oe,ke=t((()=>{De=e(i(),1),h(),Oe=`${re}--loading-animation`}));function Ae(){let[e,t]=(0,je.useState)(()=>typeof window>`u`?!0:window.matchMedia(Me).matches);return(0,je.useEffect)(()=>{let e=window.matchMedia(Me);t(e.matches);let n=e=>{t(e.matches)};return e.addEventListener(`change`,n),()=>{e.removeEventListener(`change`,n)}},[]),e}var je,Me,Ne=t((()=>{je=e(i(),1),Me=`(prefers-reduced-motion: reduce)`}));function Pe(e,t=ne){return e.reduce((e,n,r)=>{let i=n.find(e=>e!==void 0);if(!i)throw Error(`Unexpected error: Week ${r+1} is empty.`);let a=t[ee(ae(i.date))];if(!a){let e=new Date(i.date).toLocaleString(`en-US`,{month:`short`});throw Error(`Unexpected error: undefined month label for ${e}.`)}let o=e[e.length-1];return r===0||o?.label!==a?[...e,{weekIndex:r,label:a}]:e},[]).filter(({weekIndex:t},n,r)=>n===0?r[1]&&r[1].weekIndex-t>=3:n===r.length-1?e.slice(t).length>=3:!0)}function Fe(e,t,n){if(e.length!==7)throw Error(`Exactly 7 labels, one for each weekday must be passed.`);return e.reduce((e,r,i)=>t.byDayIndex(i)?Math.max(e,Math.ceil(Ie(r,n).width)):e,0)}function Ie(e,t){if(typeof document>`u`||typeof window>`u`)return{width:0,height:0};if(t<1)throw RangeError(`fontSize must be positive`);if(e.length===0)return{width:0,height:0};let n=`http://www.w3.org/2000/svg`,r=document.createElementNS(n,`svg`);r.style.position=`absolute`,r.style.visibility=`hidden`,r.style.fontFamily=window.getComputedStyle(document.body).fontFamily,r.style.fontSize=`${t}px`;let i=document.createElementNS(n,`text`);i.textContent=e,r.appendChild(i),document.body.appendChild(r);let a=i.getBBox();return document.body.removeChild(r),{width:a.width,height:a.height}}function Le(e,t){if(!e)return{byDayIndex:()=>!1,shouldShow:!1};if(e===!0)return{byDayIndex:e=>(7+e-t)%7%2!=0,shouldShow:!0};let n=[];for(let t of e){let e=Re[t.toLowerCase()];n[e]=!0}return{byDayIndex:e=>n[e]??!1,shouldShow:e.length>0}}var Re,ze=t((()=>{m(),h(),Re={sun:0,mon:1,tue:2,wed:3,thu:4,fri:5,sat:6}}));function Be(e,t={minLevel:0,maxLevel:4}){let n=Ve(t);return e?(He(e,t.maxLevel-t.minLevel+1),e.light=e.light??n.light,e.dark=e.dark??n.dark,{light:Ue(e.light)?j([e.light[1],e.light[0],e.light[1]],t):We(e.light)?j(e.light,t):e.light,dark:Ue(e.dark)?j([e.dark[1],e.dark[0],e.dark[1]],t):We(e.dark)?j(e.dark,t):e.dark}):n}function Ve(e){return{light:j([`hsl(0, 0%, 26%)`,`hsl(0, 0%, 92%)`,`hsl(0, 0%, 26%)`],e),dark:j([`hsl(0, 0%, 92%)`,`hsl(0, 0%, 22%)`,`hsl(0, 0%, 92%)`],e)}}function He(e,t){let n="The number of colors must match the number of activity levels controlled by the `minLevel` and `maxLevel` props.";if(typeof e!=`object`||e.light===void 0&&e.dark===void 0)throw Error(`The theme object must contain at least one of the fields "light" and "dark" with exactly 2 or ${t} colors respectively. ${n}`);if(e.light){let{length:r}=e.light;if(r!==2&&r!==3&&r!==t)throw Error(`theme.light must contain exactly 2 or 3 or ${t} colors, ${r} passed. ${n}`);for(let t of e.light)if(typeof window<`u`&&!CSS.supports(`color`,t))throw Error(`Invalid color "${t}" passed. All CSS color formats are accepted.`)}if(e.dark){let{length:r}=e.dark;if(r!==2&&r!==3&&r!==t)throw Error(`theme.dark must contain exactly 2 or 3 or ${t} colors, ${r} passed. ${n}`);for(let t of e.dark)if(typeof window<`u`&&!CSS.supports(`color`,t))throw Error(`Invalid color "${t}" passed. All CSS color formats are accepted.`)}}function j([e,t,n],{minLevel:r,maxLevel:i}){return te(r,i+1).map(a=>{if(a<0){if(a===r)return e;let n=(1-a/r)*100;return`color-mix(in oklab, ${t} ${parseFloat(n.toFixed(2))}%, ${e})`}if(a===0)return t;if(a===i)return n;let o=a/i*100;return`color-mix(in oklab, ${n} ${parseFloat(o.toFixed(2))}%, ${t})`})}function Ue(e){return e.length===2}function We(e){return e.length===3}var Ge=t((()=>{g()})),M,Ke=t((()=>{M={container:e=>({width:`max-content`,maxWidth:`100%`,display:`flex`,flexDirection:`column`,gap:`8px`,fontSize:`${e}px`}),scrollContainer:e=>({maxWidth:`100%`,overflowX:`auto`,overflowY:`hidden`,paddingTop:Math.ceil(.1*e)}),calendar:{display:`block`,overflow:`visible`},rect:e=>({stroke:e===`light`?`rgba(0, 0, 0, 0.08)`:`rgba(255, 255, 255, 0.04)`}),footer:{container:{display:`flex`,flexWrap:`wrap`,gap:`4px 16px`,whiteSpace:`nowrap`},legend:{marginLeft:`auto`,display:`flex`,alignItems:`center`,gap:`3px`}}}})),N,P,qe,F,Je=t((()=>{N=e(i(),1),m(),h(),Te(),ke(),Ne(),g(),ze(),Ge(),Ke(),se(),P=s(),n(),qe=(0,N.lazy)(()=>r(()=>import(`./Tooltip-BEHd1gzE.js`).then(e=>({default:e.Tooltip})),__vite__mapDeps([0,1,2,3,4,5]),import.meta.url)),F=(0,N.forwardRef)(({data:e,blockMargin:t=4,blockRadius:n=2,blockSize:r=12,className:i,colorScheme:a,fontSize:o=14,labels:s,loading:c=!1,minLevel:l=0,maxLevel:u=4,renderBlock:d,renderColorLegend:ee,showColorLegend:ne=!0,showMonthLabels:p=!0,showTotalCount:m=!0,showWeekdayLabels:se=!1,style:h={},theme:g,tooltips:_={},weekStart:v=0},de)=>{let[fe,pe]=(0,N.useState)(!1);if((0,N.useEffect)(()=>{pe(!0)},[]),l>=u)throw RangeError(`Minimum activity level must be less than maximum level. Got ${l} and ${u}.`);let y={minLevel:l,maxLevel:u},me=Be(g,y),b=we(),x=a??b,S=me[x],he=Ee(S[0],x),C=!Ae();if(c){if(C&&!he)return null;e=le()}oe(e,y);let ge=e[0],w=ie(ae(ge.date)),T=ce(e,v),E=Object.assign({},ue,s),D=p?o+8:0,O=Le(se,v),_e=fe&&O.shouldShow?Fe(E.weekdays,O,o)+8:void 0;function ve(){return{width:T.length*(r+t)-t,height:D+(r+t)*7-t}}function ye(){return T.map((e,i)=>e.map((e,a)=>{if(!e)return null;let o=c&&C?{animation:`${Oe} 1.75s ease-in-out infinite`,animationDelay:`${i*20+a*20}ms`}:void 0,s=(0,P.jsx)(`rect`,{x:0,y:D+(r+t)*a,width:r,height:r,rx:n,ry:n,fill:Ce(e.level),"data-date":e.date,"data-level":e.level,style:{...M.rect(x),...o}}),l=d?d(s,e):s;return(0,P.jsx)(N.Fragment,{children:_.activity?(0,P.jsx)(N.Suspense,{fallback:l,children:(0,P.jsx)(qe,{text:_.activity.text(e),colorScheme:x,placement:_.activity.placement??`top`,hoverRestMs:_.activity.hoverRestMs,offset:_.activity.offset,transitionStyles:_.activity.transitionStyles,withArrow:_.activity.withArrow,children:l})}):l},e.date)})).map((e,n)=>(0,P.jsx)(`g`,{transform:`translate(${(r+t)*n}, 0)`,children:e},n))}function be(){if(!m&&!ne)return null;let t=e.reduce((e,t)=>e+t.count,0);return(0,P.jsxs)(`footer`,{className:f(`footer`),style:{...M.footer.container,marginLeft:_e},children:[c&&(0,P.jsx)(`div`,{children:`\xA0`}),!c&&m&&(0,P.jsx)(`div`,{className:f(`count`),children:E.totalCount?E.totalCount.replace(`{{count}}`,String(t)).replace(`{{year}}`,String(w)):`${t} activities in ${w}`}),!c&&ne&&(0,P.jsxs)(`div`,{className:f(`legend-colors`),style:M.footer.legend,children:[E.legend.less&&(0,P.jsx)(`span`,{style:{marginRight:`0.4em`},children:E.legend.less}),te(l,u+1).map(e=>{let t=(0,P.jsx)(`svg`,{width:r,height:r,children:(0,P.jsx)(`rect`,{width:r,height:r,fill:Ce(e),rx:n,ry:n,style:M.rect(x)})},e),i=ee?ee(t,e):t;return(0,P.jsx)(N.Fragment,{children:_.colorLegend?(0,P.jsx)(N.Suspense,{fallback:i,children:(0,P.jsx)(qe,{text:_.colorLegend.text(e),colorScheme:x,placement:_.colorLegend.placement??`bottom`,hoverRestMs:_.colorLegend.hoverRestMs,offset:_.colorLegend.offset,transitionStyles:_.colorLegend.transitionStyles,withArrow:_.colorLegend.withArrow,children:i})}):i},e)}),E.legend.more&&(0,P.jsx)(`span`,{style:{marginLeft:`0.4em`},children:E.legend.more})]})]})}function xe(){return O.shouldShow?(0,P.jsx)(`g`,{className:f(`legend-weekday`),children:te(7).map(e=>{let n=(e+v)%7;return O.byDayIndex(n)?(0,P.jsx)(`text`,{x:-8,y:D+(r+t)*e+r/2,dominantBaseline:`central`,textAnchor:`end`,fill:`currentColor`,children:E.weekdays[n]},e):null})}):null}function Se(){return p?(0,P.jsx)(`g`,{className:f(`legend-month`),children:Pe(T,E.months).map(({label:e,weekIndex:n})=>(0,P.jsx)(`text`,{x:(r+t)*n,y:0,dominantBaseline:`hanging`,fill:`currentColor`,children:e},n))}):null}function Ce(e){return S[e-l]}let{width:k,height:A}=ve();return(0,P.jsxs)(`article`,{ref:de,className:`${re} ${i??``}`.trim(),style:{...h,...M.container(o)},children:[(0,P.jsx)(`div`,{className:f(`scroll-container`),style:M.scrollContainer(o),children:(0,P.jsxs)(`svg`,{width:k,height:A,viewBox:`0 0 ${k} ${A}`,className:f(`calendar`),style:{...M.calendar,marginLeft:_e},children:[!c&&xe(),!c&&Se(),ye()]})}),be()]})}),F.displayName=`ActivityCalendar`,F.__docgenInfo={description:``,methods:[],displayName:`ActivityCalendar`,props:{data:{required:!0,tsType:{name:`Array`,elements:[{name:`signature`,type:`object`,raw:`{
   date: string
   count: number
   level: number
@@ -257,7 +276,7 @@ Alternatively, provide an array of ISO 8601 weekday names to display.
 the colors for all activity levels per scheme explicitly or specify two
 colors (the zero and maximum intensity) to calculate a scale automatically.
 The number of activity levels is controlled by the \`minLevel\` and
-\`maxLevel\` properties.
+\`maxLevel\` props.
 If you have negative activity levels, you can also pass three colors,
 representing the negative, zero, and positive levels, to calculate a
 corresponding scale. For explicit themes the color count must match the
@@ -315,7 +334,7 @@ Example:
 }`,signature:{properties:[{key:`text`,value:{name:`signature`,type:`function`,raw:`(level: number) => string`,signature:{arguments:[{type:{name:`number`},name:`level`}],return:{name:`string`}},required:!0}}]}}],required:!1}}]}},description:`Tooltips to display when hovering over activity blocks or the color legend
 below the calendar.
 
-@see [Documentation](https://grubersjoe.github.io/react-activity-calendar/?path=/story/react-activity-calendar--tooltips)`,defaultValue:{value:`{}`,computed:!1}},weekStart:{required:!1,tsType:{name:`union`,raw:`0 | 1 | 2 | 3 | 4 | 5 | 6`,elements:[{name:`literal`,value:`0`},{name:`literal`,value:`1`},{name:`literal`,value:`2`},{name:`literal`,value:`3`},{name:`literal`,value:`4`},{name:`literal`,value:`5`},{name:`literal`,value:`6`}]},description:`Index of day to be used as the week start. 0 represents Sunday.`,defaultValue:{value:`0`,computed:!1}}}}})),Je=t((()=>{})),F,I,Ye,L,Xe,R,z,B,V,H,U,W,G,K,q,J,Y,X,Z,Q,Ze,$,Qe;t((()=>{F=e(i(),1),u(),o(),fe(),me(),he(),y(),_e(),ve(),C(),T(),ye(),xe(),Ce(),l(),h(),qe(),Je(),I=s(),Ye={title:`React Activity Calendar`,component:P,argTypes:{data:{control:!1},blockMargin:{control:{type:`range`,min:0,max:20}},blockRadius:{control:{type:`range`,min:0,max:20}},blockSize:{control:{type:`range`,min:4,max:30}},colorScheme:{control:!1},fontSize:{control:{type:`range`,min:6,max:32,step:2}},minLevel:{control:{type:`range`,min:-10,max:5}},maxLevel:{control:{type:`range`,min:-5,max:10}},ref:{control:!1},showWeekdayLabels:{control:`boolean`},style:{control:!1},tooltips:{control:!1},weekStart:{options:[0,1,2,3,4,5,6],control:{type:`select`,labels:{0:`Sunday (0)`,1:`Monday (1)`,2:`Tuesday (2)`,3:`Wednesday (3)`,4:`Thursday (4)`,5:`Friday (5)`,6:`Saturday (6)`}}}},decorators:[(e,{args:t})=>(t.colorScheme=a()?`dark`:`light`,(0,I.jsx)(e,{}))],parameters:{controls:{sort:`requiredFirst`},layout:`centered`},tags:[`autodocs`]},L={blockMargin:4,blockRadius:2,blockSize:12,fontSize:14,loading:!1,minLevel:0,maxLevel:4,showColorLegend:!0,showMonthLabels:!0,showTotalCount:!0,showWeekdayLabels:!1,weekStart:0},Xe={light:[`#f0f0f0`,`#c4edde`,`#7ac7c4`,`#f73859`,`#384259`],dark:[`hsl(0, 0%, 22%)`,`#4D455D`,`#7DB9B6`,`#F5E9CF`,`#E96479`]},R={args:L,render:e=>{let t=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,I.jsx)(P,{...e,data:t})},parameters:{docs:{source:{code:`<ActivityCalendar data={data} />`}}}},z={args:{...L,data:[],loading:!0},parameters:{docs:{source:{code:`<ActivityCalendar data={data} loading />`}}}},B={args:{...L,minLevel:0,maxLevel:2},render:e=>{let t=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,I.jsxs)(_,{children:[(0,I.jsx)(`h1`,{children:`Activity levels`}),(0,I.jsx)(P,{...e,data:t,labels:{legend:{less:String(e.minLevel),more:String(e.maxLevel)}},style:{margin:`1.5rem 0`}}),(0,I.jsxs)(`p`,{children:[`Use the`,` `,(0,I.jsx)(`code`,{children:(0,I.jsx)(`b`,{children:`minLevel`})}),` `,`and`,` `,(0,I.jsx)(`code`,{children:(0,I.jsx)(`b`,{children:`maxLevel`})}),` `,`properties to control the range of activity levels. By default, the range is`,` `,(0,I.jsx)(`code`,{children:`[0, 4]`}),`, resulting in 5 activity levels (0 through 4, inclusive). All activity data must be within these bounds.`]}),(0,I.jsxs)(`p`,{children:[`You can also specify a negative interval like `,(0,I.jsx)(`code`,{children:`[-4, 4]`}),`. To calculate a scale automatically pass exactly three colors representing the negative, zero and positive color (see`,` `,(0,I.jsx)(c,{kind:`react-activity-calendar`,name:`color-themes`,children:`color themes`}),`).`]}),(0,I.jsx)(P,{...e,data:p({minLevel:-4,maxLevel:4}),minLevel:-4,maxLevel:4,labels:{legend:{less:`-4`,more:`4`}},theme:{light:[`red`,`hsl(0, 0%, 92%)`,`green`]},style:{margin:`1.5rem 0`}})]})},parameters:{docs:{source:{code:`<ActivityCalendar data={data} levels={{min: 0, max: 2}} />`}}}},V={args:L,render:e=>{let t=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel,interval:{start:new Date(2022,5,1),end:new Date(2023,4,31)}}),[e.minLevel,e.maxLevel]),n=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel,interval:{start:new Date(2023,2,8),end:new Date(2023,7,1)}}),[e.minLevel,e.maxLevel]),r=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel,interval:{start:new Date(2023,5,14),end:new Date(2023,6,17)}}),[e.minLevel,e.maxLevel]);return(0,I.jsxs)(Ze,{children:[(0,I.jsx)(P,{...e,data:t,labels:{totalCount:`{{count}} activities in 2022 & 2023`}}),(0,I.jsx)(P,{...e,data:n}),(0,I.jsx)(P,{...e,data:r})]})}},H={args:{...L,theme:{light:[`hsl(0, 0%, 92%)`,`rebeccapurple`],dark:[`hsl(0, 0%, 22%)`,`hsl(225,92%,77%)`]}},parameters:{docs:{source:{code:w}}},render:e=>{let t=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,I.jsxs)(_,{children:[(0,I.jsx)(`h1`,{children:`Color themes`}),(0,I.jsx)(P,{...e,data:t,style:{margin:`2rem 0`}}),(0,I.jsxs)(`p`,{children:[`Use the`,` `,(0,I.jsx)(`code`,{children:(0,I.jsx)(`b`,{children:`theme`})}),` `,`prop to configure the calendar colors for the light and dark`,` `,(0,I.jsx)(`a`,{href:`https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme`,children:`color scheme`}),`. Provide the colors for all activity levels per scheme`,` `,(0,I.jsx)(c,{kind:`react-activity-calendar`,name:`explicit-themes`,children:`explicitly`}),` `,`or specify two colors (the zero and maximum intensity) to calculate a scale automatically. The number of activity levels is controlled by the minLevel and maxLevel properties, see`,` `,(0,I.jsx)(c,{kind:`react-activity-calendar`,name:`activity-levels`,children:`activity levels`}),`. If you have negative activity levels, you can also pass three colors, representing the negative, zero, and positive levels, to calculate a corresponding scale. For explicit themes the color count must match the number of activity levels. Colors can be specified in any valid CSS format.`]}),(0,I.jsxs)(`p`,{children:[`For undefined color schemes the default theme is used. By default, the current system color scheme is applied, but you can enforce a specific scheme with the`,` `,(0,I.jsx)(`a`,{href:`/?path=/docs/react-activity-calendar--docs`,children:(0,I.jsx)(`code`,{children:`colorScheme`})}),` `,`prop.`]}),(0,I.jsx)(d,{code:w,isDarkMode:a()})]})}},U={args:{...L,theme:Xe},parameters:{controls:{exclude:[`minLevel`,`maxLevel`]},docs:{source:{code:S}}},render:e=>{let t=(0,F.useMemo)(()=>p(),[]);return(0,I.jsxs)(_,{children:[(0,I.jsx)(`h1`,{children:`Explicit theme`}),(0,I.jsx)(`p`,{}),(0,I.jsxs)(`p`,{children:[`See the`,` `,(0,I.jsx)(c,{kind:`react-activity-calendar`,name:`color-themes`,children:`color themes`}),` `,`page for details how to use the `,(0,I.jsx)(`code`,{children:`theme`}),` prop.`]}),(0,I.jsx)(P,{...e,data:t,style:{marginTop:`2rem`}})]})}},W={args:{...L,blockSize:14,blockRadius:7,blockMargin:5,fontSize:16,theme:Xe},render:e=>{let t=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,I.jsx)(P,{...e,data:t})},parameters:{controls:{exclude:[`minLevel`,`maxLevel`]},docs:{source:{code:pe}}}},G={args:{...L,renderBlock:(e,t)=>(0,F.cloneElement)(e,{onClick:()=>{alert(JSON.stringify(t))},onMouseEnter:()=>{console.log(`on mouse enter`)}})},parameters:{docs:{source:{code:v}}},render:e=>{let t=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,I.jsxs)(_,{children:[(0,I.jsx)(`h1`,{children:`Event Handlers`}),(0,I.jsxs)(`p`,{children:[`Use the`,` `,(0,I.jsx)(`code`,{children:(0,I.jsx)(`b`,{children:`renderBlock`})}),` `,`prop to attach event handlers to the SVG `,(0,I.jsx)(`code`,{children:`rect`}),` elements that represent calendar days. Click on any block below to see it in action.`]}),(0,I.jsx)(P,{...e,data:t,style:{margin:`2rem 0`}}),(0,I.jsxs)(`p`,{children:[`Use the `,(0,I.jsx)(`code`,{children:`React.cloneElement()`}),` function to assign the handlers:`]}),(0,I.jsx)(d,{code:v,isDarkMode:a()})]})}},K={args:{...L,tooltips:{activity:{text:({count:e,date:t})=>`${e} activities on ${t}`},colorLegend:{text:e=>`Activity level ${e}`}}},render:e=>{let t=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,I.jsxs)(_,{children:[(0,I.jsx)(`h1`,{children:`Tooltips`}),(0,I.jsxs)(`p`,{children:[`Use the`,` `,(0,I.jsx)(`code`,{children:(0,I.jsx)(`b`,{children:`tooltips`})}),` `,`prop to show tooltips when hovering the calendar days or the color legend. Each tooltip's content is generated by a callback function, which receives either the activity data or level value of the hovered element.`]}),(0,I.jsx)(P,{...e,data:t,style:{margin:`2rem 0`}}),(0,I.jsxs)(`p`,{children:[`Tooltips no longer depend on external libraries and are now integrated directly into this package. Thanks to code-splitting, tooltips only affect your bundle size when you use them. Tooltips are implemented using the`,` `,(0,I.jsx)(`a`,{href:`https://floating-ui.com/`,children:`Floating UI`}),` library as a “headless” component, meaning they come `,(0,I.jsx)(`b`,{children:`without predefined styles`}),`. This gives you full control over the appearance:`]}),(0,I.jsxs)(`ul`,{children:[(0,I.jsxs)(`li`,{children:[`Import the default styles provided by this package, `,(0,I.jsx)(`b`,{children:`or`})]}),(0,I.jsx)(`li`,{children:`Add your own custom CSS.`})]}),(0,I.jsx)(d,{code:`import 'react-activity-calendar/tooltips.css';`,isDarkMode:a()}),(0,I.jsx)(d,{code:`/* Adapt to your needs */\n${Se}`,isDarkMode:a()}),(0,I.jsx)(`h2`,{children:`Tooltip configuration`}),(0,I.jsx)(`p`,{children:`You can configure the tooltips with the following optional settings:`}),(0,I.jsxs)(`ul`,{children:[(0,I.jsxs)(`li`,{children:[(0,I.jsx)(`a`,{href:`https://floating-ui.com/docs/useFloating#placement`,children:`placement`}),` of the tooltip`]}),(0,I.jsxs)(`li`,{children:[(0,I.jsx)(`a`,{href:`https://floating-ui.com/docs/offset#options`,children:`offset`}),` to the element in pixels (4 by default)`]}),(0,I.jsxs)(`li`,{children:[`the cursor “`,(0,I.jsx)(`a`,{href:`https://floating-ui.com/docs/useHover#restms`,children:`rest time`}),`” in milliseconds before opening a tooltip (150ms by default)`]}),(0,I.jsxs)(`li`,{children:[(0,I.jsx)(`a`,{href:`https://floating-ui.com/docs/useTransition#usetransitionstyles-props`,children:`transition styles`}),` `,`to fine-tune CSS animations`]}),(0,I.jsx)(`li`,{children:`whether to draw an arrow (false by default)`})]}),(0,I.jsx)(d,{code:E,isDarkMode:a()}),(0,I.jsx)(P,{...e,data:t,tooltips:{activity:{text:e=>`${e.level} activities on ${e.date}`,placement:`right`,offset:8,transitionStyles:{duration:100,common:{fontFamily:`monospace`}},hoverRestMs:300,withArrow:!0}},style:{margin:`2rem 0`}})]})},parameters:{docs:{source:{code:be}}}},q={args:{...L,showMonthLabels:!1,showColorLegend:!1,showTotalCount:!1},render:e=>{let t=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,I.jsx)(P,{...e,data:t})},parameters:{docs:{source:{code:`<ActivityCalendar data={data} showMonthLabels={false} showColorLegend={false} showTotalCount={false} />`}}}},J={args:{...L,showWeekdayLabels:!0},render:e=>{let t=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,I.jsxs)(Ze,{children:[(0,I.jsxs)(`div`,{children:[(0,I.jsx)($,{code:`true`,children:`Show every second weekday (default)`}),(0,I.jsx)(P,{...e,data:t})]}),(0,I.jsxs)(`div`,{children:[(0,I.jsx)($,{code:`['mon', 'fri']`,children:`Show specific days`}),(0,I.jsx)(P,{...e,data:t,showWeekdayLabels:[`mon`,`fri`]})]}),(0,I.jsxs)(`div`,{children:[(0,I.jsx)($,{code:`['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']`,children:`Show every day`}),(0,I.jsx)(P,{...e,data:t,showWeekdayLabels:[`sun`,`mon`,`tue`,`wed`,`thu`,`fri`,`sat`]})]})]})},parameters:{docs:{source:{code:`<ActivityCalendar data={data} showWeekdayLabels />`}}}},Y={args:{...L,showWeekdayLabels:!0,labels:{months:[`Jan`,`Feb`,`Mär`,`Apr`,`Mai`,`Jun`,`Jul`,`Aug`,`Sep`,`Okt`,`Nov`,`Dez`],weekdays:[`So`,`Mo`,`Di`,`Mi`,`Do`,`Fr`,`Sa`],totalCount:`{{count}} Aktivitäten in {{year}}`,legend:{less:`Weniger`,more:`Mehr`}}},parameters:{docs:{source:{code:b}}},render:e=>{let t=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,I.jsxs)(_,{children:[(0,I.jsx)(`h1`,{children:`Localization`}),(0,I.jsx)(`p`,{children:`Example in German:`}),(0,I.jsx)(P,{...e,data:t,style:{margin:`2rem 0`}}),(0,I.jsx)(d,{code:ge,isDarkMode:a()})]})}},X={args:{...L,weekStart:1},render:e=>{let t=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,I.jsx)(P,{...e,data:t})},parameters:{docs:{source:{code:`<ActivityCalendar data={data} weekStart={1} />`}}}},Z={args:L,parameters:{docs:{source:{code:`<ActivityCalendar data={data} />`}}},render:e=>{let t=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,I.jsx)(`div`,{style:{width:480,maxWidth:`100%`,border:`dashed 1px #929292`},children:(0,I.jsx)(P,{...e,data:t})})}},Q={args:L,parameters:{docs:{source:{code:x}}},render:e=>{let t=(0,F.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]),n=(0,F.useRef)(null);return(0,F.useEffect)(()=>{console.log(`calendar ref`,n)},[n]),(0,I.jsxs)(I.Fragment,{children:[(0,I.jsx)(P,{...e,data:t,ref:n}),(0,I.jsx)(`br`,{}),(0,I.jsx)(`p`,{children:`Check the JavaScript console to see the ref logged.`})]})}},Ze=({children:e})=>(0,I.jsx)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:`3rem`},children:e}),$=({children:e,code:t})=>(0,I.jsxs)(`div`,{role:`heading`,style:{display:`flex`,alignItems:`center`,gap:12,marginBottom:16,fontSize:16,fontWeight:`bolder`},children:[e,t&&(0,I.jsx)(`code`,{style:{fontSize:13,fontWeight:`normal`},children:t})]}),R.parameters={...R.parameters,docs:{...R.parameters?.docs,source:{originalSource:`{
+@see [Documentation](https://grubersjoe.github.io/react-activity-calendar/?path=/story/react-activity-calendar--tooltips)`,defaultValue:{value:`{}`,computed:!1}},weekStart:{required:!1,tsType:{name:`union`,raw:`0 | 1 | 2 | 3 | 4 | 5 | 6`,elements:[{name:`literal`,value:`0`},{name:`literal`,value:`1`},{name:`literal`,value:`2`},{name:`literal`,value:`3`},{name:`literal`,value:`4`},{name:`literal`,value:`5`},{name:`literal`,value:`6`}]},description:`Index of day to be used as the week start. 0 represents Sunday.`,defaultValue:{value:`0`,computed:!1}}}}})),Ye=t((()=>{})),I,L,Xe,R,Ze,z,B,V,H,U,W,G,K,q,J,Y,X,Z,Q,$,Qe,$e,et;t((()=>{I=e(i(),1),u(),o(),de(),pe(),me(),x(),he(),ge(),T(),D(),_e(),ye(),xe(),Ce(),l(),g(),Je(),Ye(),L=s(),Xe={title:`React Activity Calendar`,component:F,argTypes:{data:{control:!1},blockMargin:{control:{type:`range`,min:0,max:20}},blockRadius:{control:{type:`range`,min:0,max:20}},blockSize:{control:{type:`range`,min:4,max:30}},colorScheme:{control:!1},fontSize:{control:{type:`range`,min:6,max:32,step:2}},minLevel:{control:{type:`range`,min:-10,max:5}},maxLevel:{control:{type:`range`,min:-5,max:10}},ref:{control:!1},showWeekdayLabels:{control:`boolean`},style:{control:!1},tooltips:{control:!1},weekStart:{options:[0,1,2,3,4,5,6],control:{type:`select`,labels:{0:`Sunday (0)`,1:`Monday (1)`,2:`Tuesday (2)`,3:`Wednesday (3)`,4:`Thursday (4)`,5:`Friday (5)`,6:`Saturday (6)`}}}},decorators:[(e,{args:t})=>(t.colorScheme=a()?`dark`:`light`,(0,L.jsx)(e,{}))],parameters:{controls:{sort:`requiredFirst`},layout:`centered`},tags:[`autodocs`]},R={blockMargin:4,blockRadius:2,blockSize:12,fontSize:14,loading:!1,minLevel:0,maxLevel:4,showColorLegend:!0,showMonthLabels:!0,showTotalCount:!0,showWeekdayLabels:!1,weekStart:0},Ze={light:[`#f0f0f0`,`#c4edde`,`#7ac7c4`,`#f73859`,`#384259`],dark:[`hsl(0, 0%, 22%)`,`#4D455D`,`#7DB9B6`,`#F5E9CF`,`#E96479`]},z={args:R,render:e=>{let t=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,L.jsx)(F,{...e,data:t})},parameters:{docs:{source:{code:`<ActivityCalendar data={data} />`}}}},B={args:{...R,data:[],loading:!0},parameters:{docs:{source:{code:`<ActivityCalendar data={data} loading />`}}}},V={args:{...R,minLevel:0,maxLevel:2},render:e=>{let t=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,L.jsxs)(v,{children:[(0,L.jsx)(`h1`,{children:`Activity levels`}),(0,L.jsx)(F,{...e,data:t,labels:{legend:{less:String(e.minLevel),more:String(e.maxLevel)}},style:{margin:`1.5rem 0`}}),(0,L.jsxs)(`p`,{children:[`Use the `,(0,L.jsx)(`code`,{children:`minLevel`}),` and `,(0,L.jsx)(`code`,{children:`maxLevel`}),` props to control the range of activity levels. By default, the range is `,(0,L.jsx)(`code`,{children:`[0, 4]`}),`, resulting in 5 activity levels (0 through 4, inclusive). All activity data must be within these bounds.`]}),(0,L.jsxs)(`p`,{children:[`Activity levels support any range, including negative ones like `,(0,L.jsx)(`code`,{children:`[-6, 3]`}),`. To calculate a scale automatically pass exactly three colors representing the negative, zero and positive color (see`,` `,(0,L.jsx)(c,{kind:`react-activity-calendar`,name:`color-themes`,children:`color themes`}),`):`]}),(0,L.jsx)(F,{...e,data:p({minLevel:-6,maxLevel:3}),minLevel:-6,maxLevel:3,labels:{legend:{less:`-6`,more:`3`}},theme:{light:[`red`,`hsl(0, 0%, 92%)`,`#4ac26b`],dark:[`red`,`hsl(0, 0%, 22%)`,`#4ac26b`]},tooltips:{activity:{text:({count:e,level:t})=>`Level ${t} (${e} activities)`,withArrow:!0}},style:{margin:`1.5rem 0`}}),(0,L.jsx)(d,{code:fe,isDarkMode:a()})]})},parameters:{docs:{source:{code:`<ActivityCalendar data={data} levels={{min: 0, max: 2}} />`}}}},H={args:R,render:e=>{let t=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel,interval:{start:new Date(2022,5,1),end:new Date(2023,4,31)}}),[e.minLevel,e.maxLevel]),n=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel,interval:{start:new Date(2023,2,8),end:new Date(2023,7,1)}}),[e.minLevel,e.maxLevel]),r=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel,interval:{start:new Date(2023,5,14),end:new Date(2023,6,17)}}),[e.minLevel,e.maxLevel]);return(0,L.jsxs)(Qe,{children:[(0,L.jsx)(F,{...e,data:t,labels:{totalCount:`{{count}} activities in 2022 & 2023`}}),(0,L.jsx)(F,{...e,data:n}),(0,L.jsx)(F,{...e,data:r})]})}},U={args:{...R,theme:{light:[`hsl(0, 0%, 92%)`,`rebeccapurple`],dark:[`hsl(0, 0%, 22%)`,`hsl(225,92%,77%)`]}},parameters:{docs:{source:{code:O}}},render:e=>{let t=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,L.jsxs)(v,{children:[(0,L.jsx)(`h1`,{children:`Color themes`}),(0,L.jsx)(F,{...e,data:t,style:{margin:`2rem 0`}}),(0,L.jsxs)(`p`,{children:[`Use the `,(0,L.jsx)(`code`,{children:`theme`}),` prop to configure the calendar colors for the light and dark`,` `,(0,L.jsx)(`a`,{href:`https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme`,children:`color scheme`}),`. Provide the colors for all activity levels per scheme`,` `,(0,L.jsx)(c,{kind:`react-activity-calendar`,name:`explicit-themes`,children:`explicitly`}),` `,`or specify two colors (the zero and maximum intensity) to calculate a scale automatically. The number of activity levels is controlled by the minLevel and maxLevel props, see`,` `,(0,L.jsx)(c,{kind:`react-activity-calendar`,name:`activity-levels`,children:`activity levels`}),`. If you have negative activity levels, you can also pass three colors, representing the negative, zero, and positive levels, to calculate a corresponding scale. For explicit themes the color count must match the number of activity levels. Colors can be specified in any valid CSS format.`]}),(0,L.jsxs)(`p`,{children:[`For undefined color schemes the default theme is used. By default, the current system color scheme is applied, but you can enforce a specific scheme with the`,` `,(0,L.jsx)(`a`,{href:`/?path=/docs/react-activity-calendar--docs`,children:(0,L.jsx)(`code`,{children:`colorScheme`})}),` `,`prop.`]}),(0,L.jsx)(d,{code:O,isDarkMode:a()})]})}},W={args:{...R,theme:Ze},parameters:{controls:{exclude:[`minLevel`,`maxLevel`]},docs:{source:{code:E}}},render:e=>{let t=(0,I.useMemo)(()=>p(),[]);return(0,L.jsxs)(v,{children:[(0,L.jsx)(`h1`,{children:`Explicit theme`}),(0,L.jsx)(`p`,{}),(0,L.jsxs)(`p`,{children:[`See the`,` `,(0,L.jsx)(c,{kind:`react-activity-calendar`,name:`color-themes`,children:`color themes`}),` `,`page for details how to use the `,(0,L.jsx)(`code`,{children:`theme`}),` prop.`]}),(0,L.jsx)(F,{...e,data:t,style:{marginTop:`2rem`}})]})}},G={args:{...R,blockSize:14,blockRadius:7,blockMargin:5,fontSize:16,theme:Ze},render:e=>{let t=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,L.jsx)(F,{...e,data:t})},parameters:{controls:{exclude:[`minLevel`,`maxLevel`]},docs:{source:{code:y}}}},K={args:{...R,renderBlock:(e,t)=>(0,I.cloneElement)(e,{onClick:()=>{alert(JSON.stringify(t))},onMouseEnter:()=>{console.log(`on mouse enter`)}})},parameters:{docs:{source:{code:b}}},render:e=>{let t=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,L.jsxs)(v,{children:[(0,L.jsx)(`h1`,{children:`Event Handlers`}),(0,L.jsxs)(`p`,{children:[`Use the `,(0,L.jsx)(`code`,{children:`renderBlock`}),` prop to attach event handlers to the SVG`,` `,(0,L.jsx)(`code`,{children:`rect`}),` elements that represent calendar days. Click on any block below to see it in action.`]}),(0,L.jsx)(F,{...e,data:t,style:{margin:`2rem 0`}}),(0,L.jsxs)(`p`,{children:[`Use the `,(0,L.jsx)(`code`,{children:`React.cloneElement()`}),` function to assign the handlers:`]}),(0,L.jsx)(d,{code:b,isDarkMode:a()})]})}},q={args:{...R,tooltips:{activity:{text:({count:e,date:t})=>`${e} activities on ${t}`},colorLegend:{text:e=>`Activity level ${e}`}}},render:e=>{let t=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,L.jsxs)(v,{children:[(0,L.jsx)(`h1`,{children:`Tooltips`}),(0,L.jsxs)(`p`,{children:[`Use the `,(0,L.jsx)(`code`,{children:`tooltips`}),` prop to show tooltips when hovering the calendar days or the color legend. Each tooltip's content is generated by a callback function, which receives either the activity data or level value of the hovered element.`]}),(0,L.jsx)(F,{...e,data:t,style:{margin:`2rem 0`}}),(0,L.jsxs)(`p`,{children:[`Tooltips no longer depend on external libraries and are now integrated directly into this package. Thanks to code-splitting, tooltips only affect your bundle size when you use them. Tooltips are implemented using the`,` `,(0,L.jsx)(`a`,{href:`https://floating-ui.com/`,children:`Floating UI`}),` library as a “headless” component, meaning they come `,(0,L.jsx)(`b`,{children:`without predefined styles`}),`. This gives you full control over the appearance:`]}),(0,L.jsxs)(`ul`,{children:[(0,L.jsxs)(`li`,{children:[`Import the default styles provided by this package, `,(0,L.jsx)(`b`,{children:`or`})]}),(0,L.jsx)(`li`,{children:`Add your own custom CSS.`})]}),(0,L.jsx)(d,{code:`import 'react-activity-calendar/tooltips.css';`,isDarkMode:a()}),(0,L.jsx)(d,{code:`/* Adapt to your needs */\n${Se}`,isDarkMode:a()}),(0,L.jsx)(`h2`,{children:`Tooltip configuration`}),(0,L.jsx)(`p`,{children:`You can configure the tooltips with the following optional settings:`}),(0,L.jsxs)(`ul`,{children:[(0,L.jsxs)(`li`,{children:[(0,L.jsx)(`a`,{href:`https://floating-ui.com/docs/useFloating#placement`,children:`placement`}),` of the tooltip`]}),(0,L.jsxs)(`li`,{children:[(0,L.jsx)(`a`,{href:`https://floating-ui.com/docs/offset#options`,children:`offset`}),` to the element in pixels (4 by default)`]}),(0,L.jsxs)(`li`,{children:[`the cursor “`,(0,L.jsx)(`a`,{href:`https://floating-ui.com/docs/useHover#restms`,children:`rest time`}),`” in milliseconds before opening a tooltip (150ms by default)`]}),(0,L.jsxs)(`li`,{children:[(0,L.jsx)(`a`,{href:`https://floating-ui.com/docs/useTransition#usetransitionstyles-props`,children:`transition styles`}),` `,`to fine-tune CSS animations`]}),(0,L.jsx)(`li`,{children:`whether to draw an arrow (false by default)`})]}),(0,L.jsx)(d,{code:ve,isDarkMode:a()}),(0,L.jsx)(F,{...e,data:t,tooltips:{activity:{text:e=>`${e.level} activities on ${e.date}`,placement:`right`,offset:8,transitionStyles:{duration:100,common:{fontFamily:`monospace`}},hoverRestMs:300,withArrow:!0}},style:{margin:`2rem 0`}})]})},parameters:{docs:{source:{code:be}}}},J={args:{...R,showMonthLabels:!1,showColorLegend:!1,showTotalCount:!1},render:e=>{let t=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,L.jsx)(F,{...e,data:t})},parameters:{docs:{source:{code:`<ActivityCalendar data={data} showMonthLabels={false} showColorLegend={false} showTotalCount={false} />`}}}},Y={args:{...R,showWeekdayLabels:!0},render:e=>{let t=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,L.jsxs)(Qe,{children:[(0,L.jsxs)(`div`,{children:[(0,L.jsx)($e,{code:`true`,children:`Show every second weekday (default)`}),(0,L.jsx)(F,{...e,data:t})]}),(0,L.jsxs)(`div`,{children:[(0,L.jsx)($e,{code:`['mon', 'fri']`,children:`Show specific days`}),(0,L.jsx)(F,{...e,data:t,showWeekdayLabels:[`mon`,`fri`]})]}),(0,L.jsxs)(`div`,{children:[(0,L.jsx)($e,{code:`['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']`,children:`Show every day`}),(0,L.jsx)(F,{...e,data:t,showWeekdayLabels:[`sun`,`mon`,`tue`,`wed`,`thu`,`fri`,`sat`]})]})]})},parameters:{docs:{source:{code:`<ActivityCalendar data={data} showWeekdayLabels />`}}}},X={args:{...R,showWeekdayLabels:!0,labels:{months:[`Jan`,`Feb`,`Mär`,`Apr`,`Mai`,`Jun`,`Jul`,`Aug`,`Sep`,`Okt`,`Nov`,`Dez`],weekdays:[`So`,`Mo`,`Di`,`Mi`,`Do`,`Fr`,`Sa`],totalCount:`{{count}} Aktivitäten in {{year}}`,legend:{less:`Weniger`,more:`Mehr`}}},parameters:{docs:{source:{code:C}}},render:e=>{let t=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,L.jsxs)(v,{children:[(0,L.jsx)(`h1`,{children:`Localization`}),(0,L.jsx)(`p`,{children:`Example in German:`}),(0,L.jsx)(F,{...e,data:t,style:{margin:`2rem 0`}}),(0,L.jsx)(d,{code:S,isDarkMode:a()})]})}},Z={args:{...R,weekStart:1},render:e=>{let t=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,L.jsx)(F,{...e,data:t})},parameters:{docs:{source:{code:`<ActivityCalendar data={data} weekStart={1} />`}}}},Q={args:R,parameters:{docs:{source:{code:`<ActivityCalendar data={data} />`}}},render:e=>{let t=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]);return(0,L.jsx)(`div`,{style:{width:480,maxWidth:`100%`,border:`dashed 1px #929292`},children:(0,L.jsx)(F,{...e,data:t})})}},$={args:R,parameters:{docs:{source:{code:w}}},render:e=>{let t=(0,I.useMemo)(()=>p({minLevel:e.minLevel,maxLevel:e.maxLevel}),[e.minLevel,e.maxLevel]),n=(0,I.useRef)(null);return(0,I.useEffect)(()=>{console.log(`calendar ref`,n)},[n]),(0,L.jsxs)(L.Fragment,{children:[(0,L.jsx)(F,{...e,data:t,ref:n}),(0,L.jsx)(`br`,{}),(0,L.jsx)(`p`,{children:`Check the JavaScript console to see the ref logged.`})]})}},Qe=({children:e})=>(0,L.jsx)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:`3rem`},children:e}),$e=({children:e,code:t})=>(0,L.jsxs)(`div`,{role:`heading`,style:{display:`flex`,alignItems:`center`,gap:12,marginBottom:16,fontSize:16,fontWeight:`bolder`},children:[e,t&&(0,L.jsx)(`code`,{style:{fontSize:13,fontWeight:`normal`},children:t})]}),z.parameters={...z.parameters,docs:{...z.parameters?.docs,source:{originalSource:`{
   args: defaultProps,
   render: args => {
     const data = useMemo(() => generateTestData({
@@ -331,7 +350,7 @@ below the calendar.
       }
     }
   }
-}`,...R.parameters?.docs?.source}}},z.parameters={...z.parameters,docs:{...z.parameters?.docs,source:{originalSource:`{
+}`,...z.parameters?.docs?.source}}},B.parameters={...B.parameters,docs:{...B.parameters?.docs,source:{originalSource:`{
   args: {
     ...defaultProps,
     data: [],
@@ -344,7 +363,7 @@ below the calendar.
       }
     }
   }
-}`,...z.parameters?.docs?.source}}},B.parameters={...B.parameters,docs:{...B.parameters?.docs,source:{originalSource:`{
+}`,...B.parameters?.docs?.source}}},V.parameters={...V.parameters,docs:{...V.parameters?.docs,source:{originalSource:`{
   args: {
     ...defaultProps,
     minLevel: 0,
@@ -366,40 +385,42 @@ below the calendar.
         margin: '1.5rem 0'
       }} />
         <p>
-          Use the{' '}
-          <code>
-            <b>minLevel</b>
-          </code>{' '}
-          and{' '}
-          <code>
-            <b>maxLevel</b>
-          </code>{' '}
-          properties to control the range of activity levels. By default, the range is{' '}
-          <code>[0, 4]</code>, resulting in 5 activity levels (0 through 4, inclusive). All activity
-          data must be within these bounds.
+          Use the <code>minLevel</code> and <code>maxLevel</code> props to control the range of
+          activity levels. By default, the range is <code>[0, 4]</code>, resulting in 5 activity
+          levels (0 through 4, inclusive). All activity data must be within these bounds.
         </p>
         <p>
-          You can also specify a negative interval like <code>[-4, 4]</code>. To calculate a scale
-          automatically pass exactly three colors representing the negative, zero and positive color
-          (see{' '}
+          Activity levels support any range, including negative ones like <code>[-6, 3]</code>. To
+          calculate a scale automatically pass exactly three colors representing the negative, zero
+          and positive color (see{' '}
           <LinkTo kind="react-activity-calendar" name="color-themes">
             color themes
           </LinkTo>
-          ).
+          ):
         </p>
         <ActivityCalendar {...args} data={generateTestData({
-        minLevel: -4,
-        maxLevel: 4
-      })} minLevel={-4} maxLevel={4} labels={{
+        minLevel: -6,
+        maxLevel: 3
+      })} minLevel={-6} maxLevel={3} labels={{
         legend: {
-          less: '-4',
-          more: '4'
+          less: '-6',
+          more: '3'
         }
       }} theme={{
-        light: ['red', 'hsl(0, 0%, 92%)', 'green']
+        light: ['red', 'hsl(0, 0%, 92%)', '#4ac26b'],
+        dark: ['red', 'hsl(0, 0%, 22%)', '#4ac26b']
+      }} tooltips={{
+        activity: {
+          text: ({
+            count,
+            level
+          }) => \`Level \${level} (\${count} activities)\`,
+          withArrow: true
+        }
       }} style={{
         margin: '1.5rem 0'
       }} />
+        <Source code={exampleActivityLevels} isDarkMode={useDarkMode()} />
       </Container>;
   },
   parameters: {
@@ -409,7 +430,7 @@ below the calendar.
       }
     }
   }
-}`,...B.parameters?.docs?.source}}},V.parameters={...V.parameters,docs:{...V.parameters?.docs,source:{originalSource:`{
+}`,...V.parameters?.docs?.source}}},H.parameters={...H.parameters,docs:{...H.parameters?.docs,source:{originalSource:`{
   args: defaultProps,
   render: args => {
     const dataLong = useMemo(() => generateTestData({
@@ -444,7 +465,7 @@ below the calendar.
         <ActivityCalendar {...args} data={dataShort} />
       </Stack>;
   }
-}`,...V.parameters?.docs?.source}}},H.parameters={...H.parameters,docs:{...H.parameters?.docs,source:{originalSource:`{
+}`,...H.parameters?.docs?.source}}},U.parameters={...U.parameters,docs:{...U.parameters?.docs,source:{originalSource:`{
   args: {
     ...defaultProps,
     theme: {
@@ -470,18 +491,14 @@ below the calendar.
         margin: '2rem 0'
       }} />
         <p>
-          Use the{' '}
-          <code>
-            <b>theme</b>
-          </code>{' '}
-          prop to configure the calendar colors for the light and dark{' '}
+          Use the <code>theme</code> prop to configure the calendar colors for the light and dark{' '}
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme">color scheme</a>.
           Provide the colors for all activity levels per scheme{' '}
           <LinkTo kind="react-activity-calendar" name="explicit-themes">
             explicitly
           </LinkTo>{' '}
           or specify two colors (the zero and maximum intensity) to calculate a scale automatically.
-          The number of activity levels is controlled by the minLevel and maxLevel properties, see{' '}
+          The number of activity levels is controlled by the minLevel and maxLevel props, see{' '}
           <LinkTo kind="react-activity-calendar" name="activity-levels">
             activity levels
           </LinkTo>
@@ -501,7 +518,7 @@ below the calendar.
         <Source code={exampleTheme} isDarkMode={useDarkMode()} />
       </Container>;
   }
-}`,...H.parameters?.docs?.source}}},U.parameters={...U.parameters,docs:{...U.parameters?.docs,source:{originalSource:`{
+}`,...U.parameters?.docs?.source}}},W.parameters={...W.parameters,docs:{...W.parameters?.docs,source:{originalSource:`{
   args: {
     ...defaultProps,
     theme: explicitTheme
@@ -534,7 +551,7 @@ below the calendar.
       }} />
       </Container>;
   }
-}`,...U.parameters?.docs?.source}}},W.parameters={...W.parameters,docs:{...W.parameters?.docs,source:{originalSource:`{
+}`,...W.parameters?.docs?.source}}},G.parameters={...G.parameters,docs:{...G.parameters?.docs,source:{originalSource:`{
   args: {
     ...defaultProps,
     blockSize: 14,
@@ -561,7 +578,7 @@ below the calendar.
       }
     }
   }
-}`,...W.parameters?.docs?.source}}},G.parameters={...G.parameters,docs:{...G.parameters?.docs,source:{originalSource:`{
+}`,...G.parameters?.docs?.source}}},K.parameters={...K.parameters,docs:{...K.parameters?.docs,source:{originalSource:`{
   args: {
     ...defaultProps,
     renderBlock: (block, activity) => cloneElement(block, {
@@ -589,12 +606,9 @@ below the calendar.
     return <Container>
         <h1>Event Handlers</h1>
         <p>
-          Use the{' '}
-          <code>
-            <b>renderBlock</b>
-          </code>{' '}
-          prop to attach event handlers to the SVG <code>rect</code> elements that represent
-          calendar days. Click on any block below to see it in action.
+          Use the <code>renderBlock</code> prop to attach event handlers to the SVG{' '}
+          <code>rect</code> elements that represent calendar days. Click on any block below to see
+          it in action.
         </p>
         <ActivityCalendar {...args} data={data} style={{
         margin: '2rem 0'
@@ -605,7 +619,7 @@ below the calendar.
         <Source code={exampleEventHandlers} isDarkMode={useDarkMode()} />
       </Container>;
   }
-}`,...G.parameters?.docs?.source}}},K.parameters={...K.parameters,docs:{...K.parameters?.docs,source:{originalSource:`{
+}`,...K.parameters?.docs?.source}}},q.parameters={...q.parameters,docs:{...q.parameters?.docs,source:{originalSource:`{
   args: {
     ...defaultProps,
     tooltips: {
@@ -628,13 +642,9 @@ below the calendar.
     return <Container>
         <h1>Tooltips</h1>
         <p>
-          Use the{' '}
-          <code>
-            <b>tooltips</b>
-          </code>{' '}
-          prop to show tooltips when hovering the calendar days or the color legend. Each tooltip's
-          content is generated by a callback function, which receives either the activity data or
-          level value of the hovered element.
+          Use the <code>tooltips</code> prop to show tooltips when hovering the calendar days or the
+          color legend. Each tooltip's content is generated by a callback function, which receives
+          either the activity data or level value of the hovered element.
         </p>
         <ActivityCalendar {...args} data={data} style={{
         margin: '2rem 0'
@@ -706,7 +716,7 @@ below the calendar.
       }
     }
   }
-}`,...K.parameters?.docs?.source}}},q.parameters={...q.parameters,docs:{...q.parameters?.docs,source:{originalSource:`{
+}`,...q.parameters?.docs?.source}}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
   args: {
     ...defaultProps,
     showMonthLabels: false,
@@ -727,7 +737,7 @@ below the calendar.
       }
     }
   }
-}`,...q.parameters?.docs?.source}}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+}`,...J.parameters?.docs?.source}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
   args: {
     ...defaultProps,
     showWeekdayLabels: true
@@ -763,7 +773,7 @@ below the calendar.
       }
     }
   }
-}`,...J.parameters?.docs?.source}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+}`,...Y.parameters?.docs?.source}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
   args: {
     ...defaultProps,
     showWeekdayLabels: true,
@@ -798,7 +808,7 @@ below the calendar.
         <Source code={exampleLabelsShape} isDarkMode={useDarkMode()} />
       </Container>;
   }
-}`,...Y.parameters?.docs?.source}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+}`,...X.parameters?.docs?.source}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
   args: {
     ...defaultProps,
     weekStart: 1
@@ -817,7 +827,7 @@ below the calendar.
       }
     }
   }
-}`,...X.parameters?.docs?.source}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+}`,...Z.parameters?.docs?.source}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
   args: defaultProps,
   parameters: {
     docs: {
@@ -839,7 +849,7 @@ below the calendar.
         <ActivityCalendar {...args} data={data} />
       </div>;
   }
-}`,...Z.parameters?.docs?.source}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+}`,...Q.parameters?.docs?.source}}},$.parameters={...$.parameters,docs:{...$.parameters?.docs,source:{originalSource:`{
   args: defaultProps,
   parameters: {
     docs: {
@@ -864,4 +874,4 @@ below the calendar.
         <p>Check the JavaScript console to see the ref logged.</p>
       </>;
   }
-}`,...Q.parameters?.docs?.source}}},Qe=[`Default`,`Loading`,`ActivityLevels`,`DateRanges`,`ColorThemes`,`ExplicitThemes`,`Customization`,`EventHandlers`,`Tooltips`,`WithoutLabels`,`WeekdayLabels`,`LocalizedLabels`,`MondayAsWeekStart`,`NarrowScreens`,`ContainerRef`]}))();export{B as ActivityLevels,H as ColorThemes,Q as ContainerRef,W as Customization,V as DateRanges,R as Default,G as EventHandlers,U as ExplicitThemes,z as Loading,Y as LocalizedLabels,X as MondayAsWeekStart,Z as NarrowScreens,K as Tooltips,J as WeekdayLabels,q as WithoutLabels,Qe as __namedExportsOrder,Ye as default};
+}`,...$.parameters?.docs?.source}}},et=[`Default`,`Loading`,`ActivityLevels`,`DateRanges`,`ColorThemes`,`ExplicitThemes`,`Customization`,`EventHandlers`,`Tooltips`,`WithoutLabels`,`WeekdayLabels`,`LocalizedLabels`,`MondayAsWeekStart`,`NarrowScreens`,`ContainerRef`]}))();export{V as ActivityLevels,U as ColorThemes,$ as ContainerRef,G as Customization,H as DateRanges,z as Default,K as EventHandlers,W as ExplicitThemes,B as Loading,X as LocalizedLabels,Z as MondayAsWeekStart,Q as NarrowScreens,q as Tooltips,Y as WeekdayLabels,J as WithoutLabels,et as __namedExportsOrder,Xe as default};
