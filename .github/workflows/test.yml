@@ -36,7 +36,7 @@ jobs:
         run: pnpm test:unit
 
       - name: Run type checks (TypeScript)
-        run: pnpm tsc
+        run: pnpm exec tsgo
 
       - name: Run linter (ESLint)
         run: pnpm lint
