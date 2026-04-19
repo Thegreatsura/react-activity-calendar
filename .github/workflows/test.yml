@@ -32,11 +32,11 @@ jobs:
       - name: Check formatting (Prettier)
         run: pnpm exec prettier -c .
 
-      - name: Run unit tests
-        run: pnpm test:unit
-
       - name: Run type checks (TypeScript)
         run: pnpm exec tsgo
 
       - name: Run linter (ESLint)
         run: pnpm lint
+
+      - name: Run unit tests
+        run: pnpm test:unit
