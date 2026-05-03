@@ -33,6 +33,7 @@
     "prebuild": "rm -rf build/*",
     "prepare": "husky",
     "prepublishOnly": "pnpm check && pnpm build",
+    "publish": "pnpm publish --access public",
     "react-docgen": "pnpm dlx @react-docgen/cli src/components/ActivityCalendar.tsx | jq '.[\"src/components/ActivityCalendar.tsx\"][0]'",
     "start": "rollup -c -w",
     "test": "pnpm test:unit && pnpm test:visual",
