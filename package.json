@@ -73,6 +73,7 @@
     "eslint-plugin-storybook": "^10.3.5",
     "globals": "^17.4.0",
     "husky": "^9.1.7",
+    "jsdom": "^29.1.1",
     "prettier": "^3.8.1",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.2.5",
